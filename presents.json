@@ -1,0 +1,172 @@
+{
+  "categories": [
+    {
+      "id": "cds",
+      "name": "CDs 💿",
+      "colorClass": "green",
+      "items": [
+        {
+          "name": "Come From Away (Soundtrack)",
+          "tags": ["Music"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/22c55e/ffffff?text=Come+From+Away",
+          "link": "https://www.google.com/search?q=Come+From+Away+Soundtrack+CD"
+        },
+        {
+          "name": "Indiana Jones Soundtracks",
+          "tags": ["Music"],
+          "story": "All of them (but not Crystal Skull). Add your story here!",
+          "image": "https://placehold.co/600x400/ca8a04/ffffff?text=Indiana+Jones",
+          "link": "https://www.google.com/search?q=Indiana+Jones+Soundtrack+CD"
+        },
+        {
+          "name": "Back to the Future (Soundtrack)",
+          "tags": ["Music"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/0284c7/ffffff?text=Back+to+the+Future",
+          "link": "https://www.google.com/search?q=Back+to+the+Future+Soundtrack+CD"
+        },
+        {
+          "name": "Six the Musical (Soundtrack)",
+          "tags": ["Music"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/db2777/ffffff?text=Six+the+Musical",
+          "link": "https://www.google.com/search?q=Six+the+Musical+Soundtrack+CD"
+        }
+      ]
+    },
+    {
+      "id": "dvds",
+      "name": "DVDs 📀",
+      "colorClass": "blue",
+      "items": [
+        {
+          "name": "Battlestar Galactica (Full Series)",
+          "tags": ["TV", "Sci-Fi"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/64748b/ffffff?text=BSG",
+          "link": "https://www.google.com/search?q=Battlestar+Galactica+Complete+Series+DVD"
+        },
+        {
+          "name": "The Jetsons (Full Series)",
+          "tags": ["TV", "Cartoon"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/34d399/ffffff?text=Jetsons",
+          "link": "https://www.google.com/search?q=The+Jetsons+Complete+Series+DVD"
+        }
+      ]
+    },
+    {
+      "id": "for-the-home",
+      "name": "For the Home 🏠",
+      "colorClass": "yellow",
+      "items": [
+        {
+          "name": "Butter Bell",
+          "tags": ["Kitchen"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/f59e0b/ffffff?text=Butter+Bell",
+          "link": "https://www.google.com/search?q=Butter+Bell"
+        },
+        {
+          "name": "USB C Meat Thermometer",
+          "tags": ["Kitchen", "Tech"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/ef4444/ffffff?text=Meat+Thermometer",
+          "link": "https://www.google.com/search?q=USB+C+Meat+Thermometer"
+        },
+        {
+          "name": "Shower Lamp",
+          "tags": ["Bathroom"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/38bdf8/ffffff?text=Shower+Lamp",
+          "link": "https://www.google.com/search?q=Shower+Lamp"
+        },
+        {
+          "name": "Ember Mug Charger",
+          "tags": ["Cozy"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/10b981/ffffff?text=Ember+Charger",
+          "link": "https://www.google.com/search?q=Ember+Mug+Charger"
+        },
+        {
+          "name": "Trash Can",
+          "tags": ["Utility"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/6b7280/ffffff?text=Trash+Can",
+          "link": "https://www.google.com/search?q=Trash+Can"
+        }
+      ]
+    },
+    {
+      "id": "technology",
+      "name": "Technology 💻",
+      "colorClass": "red",
+      "items": [
+        {
+          "name": "5 TB HDD 2.5\"",
+          "tags": ["Tech", "Storage"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/ef4444/ffffff?text=5TB+HDD",
+          "link": "https://www.google.com/search?q=5TB+HDD+2.5+inch"
+        },
+        {
+          "name": "PodMic",
+          "tags": ["Tech", "Audio"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/1f2937/ffffff?text=PodMic",
+          "link": "https://www.google.com/search?q=Rode+PodMic"
+        },
+        {
+          "name": "Handheld Dock",
+          "tags": ["Tech", "Gaming"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/4f46e5/ffffff?text=Handheld+Dock",
+          "link": "https://www.google.com/search?q=Handheld+Dock"
+        },
+        {
+          "name": "Long USB Cable",
+          "tags": ["Tech", "Accessory"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/71717a/ffffff?text=Long+USB+Cable",
+          "link": "https://www.google.com/search?q=Long+USB+Cable"
+        },
+        {
+          "name": "ID Badge Holder",
+          "tags": ["Tech", "Work"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/a1a1aa/ffffff?text=ID+Badge+Holder",
+          "link": "https://www.google.com/search?q=ID+Badge+Holder"
+        }
+      ]
+    },
+    {
+      "id": "dnd",
+      "name": "D&D 🐉",
+      "colorClass": "green",
+      "items": [
+        {
+          "name": "Fancy Dice Set",
+          "tags": ["D&D", "Gaming"],
+          "story": "To make my critical fails look *extra* stylish.",
+          "image": "https://placehold.co/600x400/8b5cf6/ffffff?text=Dice",
+          "link": "https://www.google.com/search?q=Fancy+Dice+Set"
+        }
+      ]
+    },
+    {
+      "id": "other-hobbies",
+      "name": "Other Hobbies 🎨",
+      "colorClass": "yellow",
+      "items": [
+        {
+          "name": "Instant Camera",
+          "tags": ["Creative", "Adventure"],
+          "story": "I love the idea of capturing a moment and having a real, physical photo right away to stick on the fridge or give to a friend.",
+          "image": "https://placehold.co/600x400/0ea5e9/ffffff?text=Camera",
+          "link": "https://www.google.com/search?q=Instant+Camera"
+        }
+      ]
+    }
+  ]
+}
