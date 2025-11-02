@@ -210,7 +210,7 @@
         <!-- Footer -->
         <footer class="text-center mt-12 pt-8 border-t border-gray-300 dark:border-slate-700">
             <p class="text-sm text-gray-600 dark:text-gray-400">
-                Wishing you a Merry Christmas! 🎄
+                Wishing you a Merry Christmas! <span id="tree-emoji" class="cursor-pointer" title="What could happen?">🎄</span>
             </p>
         </footer>
 
@@ -342,7 +342,24 @@
                 }
             }
 
-            createSnow();
+            // createSnow(); // Don't start snow on page load
+
+            // --- Easter Egg Logic ---
+            const treeEmoji = document.getElementById('tree-emoji');
+            let clickCount = 0;
+            const clicksNeeded = 25;
+
+            if (treeEmoji) {
+                treeEmoji.addEventListener('click', () => {
+                    clickCount++;
+                    if (clickCount === clicksNeeded) {
+                        createSnow();
+                        // Optional: remove the listener so it doesn't run again
+                        treeEmoji.style.cursor = 'default';
+                        treeEmoji.replaceWith(treeEmoji.cloneNode(true));
+                    }
+                });
+            }
 
             // --- Wishlist Generation Logic ---
             async function generateWishlist() {
