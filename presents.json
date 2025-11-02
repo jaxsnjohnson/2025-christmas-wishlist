@@ -95,6 +95,13 @@
           "story": "Add your story here!",
           "image": "https://placehold.co/600x400/6b7280/ffffff?text=Trash+Can",
           "link": "https://www.google.com/search?q=Trash+Can"
+        },
+        {
+          "name": "Hempz Herbal Moisturizer",
+          "tags": ["Bathroom", "Cozy"],
+          "story": "Add your story here!",
+          "image": "https://placehold.co/600x400/a3e635/ffffff?text=Lotion",
+          "link": "https://www.amazon.com/Hempz-Herbal-Moisturizer-Age-Defying-17oz/dp/B000OYNCES/"
         }
       ]
     },
