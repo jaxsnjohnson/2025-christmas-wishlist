@@ -342,7 +342,13 @@
                 }
             }
 
-            createSnow();
+            // createSnow(); // Don't start snow on page load
+
+            // --- URL Flag Logic for Snow ---
+            const urlParams = new URLSearchParams(window.location.search);
+            if (urlParams.get('snow') === 'true') {
+                createSnow();
+            }
 
             // --- Easter Egg Logic ---
             const treeEmoji = document.getElementById('tree-emoji');
