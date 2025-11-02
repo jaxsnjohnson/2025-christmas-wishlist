@@ -14,6 +14,11 @@
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class'
+        }
+    </script>
     
     <!-- Google Font for whimsical titles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -243,9 +248,13 @@
 
             const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
             let isDark;
-            if (localStorage.theme === 'dark') isDark = true;
-            else if (localStorage.theme === 'light') isDark = false;
-            else isDark = prefersDark;
+            if (localStorage.theme === 'dark') {
+                isDark = true;
+            } else if (localStorage.theme === 'light') {
+                isDark = false;
+            } else {
+                isDark = prefersDark;
+            }
             setTheme(isDark);
 
             themeToggleBtn.addEventListener('click', () => {
