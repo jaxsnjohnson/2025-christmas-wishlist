@@ -45,60 +45,6 @@
             font-family: 'Inter', sans-serif;
         }
 
-        /* Snow Animation Container */
-        #snow-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            pointer-events: none;
-            z-index: 9999;
-            overflow: hidden;
-        }
-
-        /* Individual Snowflake */
-        .snowflake {
-            position: absolute;
-            top: -20px;
-            /* Changed from white to be visible in light mode */
-            background: #94a3b8; /* slate-400 */
-            border-radius: 50%;
-            opacity: 0.8;
-            animation: fall linear infinite, drift linear infinite;
-        }
-        
-        /* Make snow white again in dark mode */
-        .dark .snowflake {
-            background: white;
-        }
-
-        /* Animation for falling */
-        @keyframes fall {
-            0% {
-                transform: translateY(-20px);
-                opacity: 0.8;
-            }
-            100% {
-                transform: translateY(105vh);
-                opacity: 0.2;
-            }
-        }
-
-        /* Animation for side-to-side drift (variation 1) */
-        @keyframes drift-0 {
-            0% { transform: translateX(0px); }
-            50% { transform: translateX(40px); }
-            100% { transform: translateX(0px); }
-        }
-
-        /* Animation for side-to-side drift (variation 2) */
-        @keyframes drift-1 {
-            0% { transform: translateX(0px); }
-            50% { transform: translateX(-40px); }
-            100% { transform: translateX(0px); }
-        }
-
         /* Styles for Collapsible Sidebar */
         #sidebar.collapsed {
             width: 5rem; /* 80px */
@@ -127,9 +73,6 @@
 </head>
 <body class="bg-gray-100 dark:bg-slate-900 text-gray-800 dark:text-gray-200 transition-colors duration-500">
     
-    <!-- Snow container: snowflakes will be injected here by JS -->
-    <div id="snow-container"></div>
-
     <!-- Main content: relative and z-10 ensure it's "above" the snow. -->
     <div class="relative z-10 container mx-auto max-w-6xl p-4 md:p-8">
 
@@ -213,7 +156,7 @@
         <!-- Footer -->
         <footer class="text-center mt-12 pt-8 border-t border-gray-300 dark:border-slate-700">
             <p class="text-sm text-gray-600 dark:text-gray-400">
-                Wishing you a Merry Christmas! <span id="tree-emoji" class="cursor-pointer" title="What could happen?">🎄</span>
+                Wishing you a Merry Christmas! 🎄
             </p>
         </footer>
 
@@ -310,64 +253,6 @@
             if (collapseBtn && sidebar) {
                 collapseBtn.addEventListener('click', () => {
                     sidebar.classList.toggle('collapsed');
-                });
-            }
-
-            // --- Snow Creation Logic ---
-            function createSnow() {
-                console.log('Creating snow...');
-                const container = document.getElementById('snow-container');
-                if (!container) return;
-                
-                const snowCount = 100;
-
-                for (let i = 0; i < snowCount; i++) {
-                    const flake = document.createElement('div');
-                    flake.className = 'snowflake';
-                    
-                    const size = Math.random() * 4 + 2;
-                    flake.style.width = `${size}px`;
-                    flake.style.height = `${size}px`;
-                    
-                    flake.style.left = `${Math.random() * 100}vw`;
-                    
-                    const fallDuration = Math.random() * 10 + 8;
-                    const driftAnimation = `drift-${i % 2}`;
-                    const driftDuration = Math.random() * 5 + 3;
-                    
-                    const fallDelay = `${Math.random() * -10}s`;
-                    const driftDelay = `${Math.random() * -5}s`;
-
-                    flake.style.animationName = `fall, ${driftAnimation}`;
-                    flake.style.animationDuration = `${fallDuration}s, ${driftDuration}s`;
-                    flake.style.animationDelay = `${fallDelay}, ${driftDelay}`;
-                    
-                    container.appendChild(flake);
-                }
-            }
-
-            // createSnow(); // Don't start snow on page load
-
-            // --- URL Flag Logic for Snow ---
-            const urlParams = new URLSearchParams(window.location.search);
-            if (urlParams.get('snow') === 'true') {
-                createSnow();
-            }
-
-            // --- Easter Egg Logic ---
-            const treeEmoji = document.getElementById('tree-emoji');
-            let clickCount = 0;
-            const clicksNeeded = 25;
-
-            if (treeEmoji) {
-                treeEmoji.addEventListener('click', () => {
-                    clickCount++;
-                    if (clickCount === clicksNeeded) {
-                        createSnow();
-                        // Optional: remove the listener so it doesn't run again
-                        treeEmoji.style.cursor = 'default';
-                        treeEmoji.replaceWith(treeEmoji.cloneNode(true));
-                    }
                 });
             }
 
